@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "nothash backend",
   "scripts": {
+    "dev": "nodemon src/index.ts --exec ts-node",
     "build": "tsc",
     "watch-tsc": "tsc -w",
-    "deploy": "node dist/src/index.js",
-    "watch-deploy": "nodemon dist/src/index.js",
     "server": "concurrently \"npm run watch-tsc\" \"npm run watch-deploy\"",
-    "start": "npm run deploy",
-    "dev": "nodemon src/index.ts --exec ts-node",
     "nfts": "nodemon src/nfts.ts --exec ts-node",
     "heroku-postbuild": "npm run tsc"
   },
