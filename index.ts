@@ -3,9 +3,9 @@ import cors from 'cors';
 import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
-import connectDB from '../config/database';
-import Routes from './routes';
-import { PORT } from './config';
+import connectDB from './config/database';
+import Routes from './src/routes';
+import { PORT } from './src/config';
 
 const app = express();
 
@@ -17,11 +17,6 @@ app.use(
   })
 );
 app.use((req, res, next) => {
-  const allowedOrigins = ["https://kai-app-finance.vercel.app", "http://localhost:3000"];
-  const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
-      res.setHeader("Access-Control-Allow-Origin", origin);
-  }
   res.header("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.header("Access-Control-Allow-Credentials", "true");
