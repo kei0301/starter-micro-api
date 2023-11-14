@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SMTP_USER = exports.SENDGRID_TEMPLATE_SIGNUP_ID = exports.SENDGRID_TEMPLATE_FORGOTPWD_ID = exports.SENDGRID_TEMPLATE_SHARE_ID = exports.SENDGRID_API_KEY = exports.ADDRESS_TO = exports.ADDRESS_FROM = exports.SECRET_KEY = exports.INDEXER_SERVER = exports.ALGOD_SERVER = exports.ALGOD_TOKEN = exports.API_URL = exports.JWTEXPIRATION = exports.JWTSECRET = exports.MONGOURL = exports.PORT = void 0;
+exports.PORT = process.env.PORT || 8080;
+exports.MONGOURL = process.env.MONGOURL;
+exports.JWTSECRET = process.env.JWTSECRET;
+exports.JWTEXPIRATION = process.env.JWTEXPIRATION || 7200;
+exports.API_URL = process.env.API_URL || "http://localhost:8080";
+exports.ALGOD_TOKEN = process.env.ALGOD_TOKEN;
+exports.ALGOD_SERVER = process.env.ALGOD_SERVER;
+exports.INDEXER_SERVER = process.env.INDEXER_SERVER;
+exports.SECRET_KEY = process.env.SECRET_KEY;
+exports.ADDRESS_FROM = process.env.ADDRESS_FROM;
+exports.ADDRESS_TO = process.env.ADDRESS_TO;
+exports.SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+exports.SENDGRID_TEMPLATE_SHARE_ID = process.env.SENDGRID_TEMPLATE_SHARE_ID;
+exports.SENDGRID_TEMPLATE_FORGOTPWD_ID = process.env.SENDGRID_TEMPLATE_FORGOTPWD_ID;
+exports.SENDGRID_TEMPLATE_SIGNUP_ID = process.env.SENDGRID_TEMPLATE_SIGNUP_ID;
+exports.SMTP_USER = process.env.SMTP_USER;
+//# sourceMappingURL=config.js.map
