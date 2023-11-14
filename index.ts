@@ -27,12 +27,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/api', Routes);
 
-app.get('*', (req: express.Request, res: express.Response) => {
-  res.sendFile(
-    path.join(__dirname, '../build/index.html')
-  ); //dist
-});
-
 const http = require('http').createServer(app);
 http.listen(PORT);
 console.log('server listening on:', PORT);
